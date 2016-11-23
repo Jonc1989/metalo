@@ -1,0 +1,452 @@
+# Translation of Themes - Twenty Fourteen in Latvian
+# This file is distributed under the same license as the Themes - Twenty Fourteen package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-10-12 20:36:16+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: lv\n"
+"Project-Id-Version: Themes - Twenty Fourteen\n"
+
+#. Description of the plugin/theme
+msgid "In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier."
+msgstr "2014 - Twenty Fourteen, mūsu noklusējuma tēma, ļaus jums izveidot atsaucīgu žurnāla mājas lapu ar elegantu un modernu dizainu. Attēlojiet savu iecienīto saturu lapas režģī vai slīdošā elementā. Izmantojiet trīs logrīku vietas, lai pielāgotu mājas lapu un mainītu satura izkārtojumu ar pilna platuma lapas veidni un autoru lapu. Veidot žurnāla mājas lapu ar WordPress vēl nekad nav bijis tik viegli."
+
+#. Template Name of the plugin/theme
+msgid "Full Width Page"
+msgstr "Pilna platuma lapa"
+
+#. Template Name of the plugin/theme
+msgid "Contributor Page"
+msgstr "Dalībnieka lapa"
+
+#: tag.php:22
+msgid "Tag Archives: %s"
+msgstr "Birku arhīvs: %s"
+
+#: search.php:18
+msgid "Search Results for: %s"
+msgstr "Meklēšanas rezultāti: %s"
+
+#: inc/widgets.php:282
+msgid "Post format to show:"
+msgstr "Attēlojamā raksta formāts:"
+
+#: inc/widgets.php:279
+msgid "Number of posts to show:"
+msgstr "Rādāmo rakstu skaits:"
+
+#: inc/widgets.php:276
+msgid "Title:"
+msgstr "Virsraksts:"
+
+#. translators: used with More archives link
+#: inc/widgets.php:227
+msgid "%s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/widgets.php:183
+msgid "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photo</a>."
+msgid_plural "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photos</a>."
+msgstr[0] "Šī galerija satur <a href=\"%1$s\" rel=\"bookmark\">%2$s attēlu</a>."
+msgstr[1] "Šī galerija satur <a href=\"%1$s\" rel=\"bookmark\">%2$s attēlus</a>."
+msgstr[2] "Šī galerija satur <a href=\"%1$s\" rel=\"bookmark\">%2$s attēlu</a>."
+
+#: inc/widgets.php:148 inc/widgets.php:193
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Turpiniet lasīt <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/widgets.php:101
+msgid "More asides"
+msgstr "Vairāk malas"
+
+#: inc/widgets.php:100 taxonomy-post_format.php:30
+msgid "Asides"
+msgstr "Malas"
+
+#: inc/widgets.php:96
+msgid "More galleries"
+msgstr "Vairāk Galerijas"
+
+#: inc/widgets.php:95 taxonomy-post_format.php:48
+msgid "Galleries"
+msgstr "Galerijas"
+
+#: inc/widgets.php:92
+msgid "More links"
+msgstr "Vairāk saišu"
+
+#: inc/widgets.php:91 taxonomy-post_format.php:45
+msgid "Links"
+msgstr "Saites"
+
+#: inc/widgets.php:88
+msgid "More quotes"
+msgstr "Vairāk citātu"
+
+#: inc/widgets.php:87 taxonomy-post_format.php:42
+msgid "Quotes"
+msgstr "Citāti"
+
+#: inc/widgets.php:84
+msgid "More audio"
+msgstr "Vairāk audio"
+
+#: inc/widgets.php:83 taxonomy-post_format.php:39
+msgid "Audio"
+msgstr "Audio"
+
+#: inc/widgets.php:80
+msgid "More videos"
+msgstr "Vairāk video"
+
+#: inc/widgets.php:79 taxonomy-post_format.php:36
+msgid "Videos"
+msgstr "Video"
+
+#: inc/widgets.php:76
+msgid "More images"
+msgstr "Vairāk attēlu"
+
+#: inc/widgets.php:75 taxonomy-post_format.php:33
+msgid "Images"
+msgstr "Attēli"
+
+#: inc/widgets.php:36
+msgid "Use this widget to list your recent Aside, Quote, Video, Audio, Image, Gallery, and Link posts."
+msgstr "Izmanto šo logdaļu, lai uzskaitītu Malu, Citātu, Video, Audio, Attēlu, Galeriju, un Saišu rakstus."
+
+#: inc/widgets.php:34
+msgid "Twenty Fourteen Ephemera"
+msgstr "Twenty Fourteen Ephemera"
+
+#: inc/template-tags.php:109
+msgid "Sticky"
+msgstr "Pielīmēts"
+
+#: inc/template-tags.php:92
+msgid "<span class=\"meta-nav\">Next Post</span>%title"
+msgstr "<span class=\"meta-nav\">Nākamais raksts</span>%title"
+
+#: inc/template-tags.php:91
+msgid "<span class=\"meta-nav\">Previous Post</span>%title"
+msgstr "<span class=\"meta-nav\">Iepriekšējais raksts</span>%title"
+
+#: inc/template-tags.php:89
+msgid "<span class=\"meta-nav\">Published In</span>%title"
+msgstr "<span class=\"meta-nav\">Publicets</span>%title"
+
+#: inc/template-tags.php:85
+msgid "Post navigation"
+msgstr "Rakstu navigācija"
+
+#: inc/template-tags.php:58
+msgid "Posts navigation"
+msgstr "Rakstu navigācija"
+
+#: inc/template-tags.php:51
+msgid "Next &rarr;"
+msgstr "Nākamais &rarr;"
+
+#: inc/template-tags.php:50
+msgid "&larr; Previous"
+msgstr "&larr; Iepriekšējais"
+
+#: inc/featured-content.php:431
+msgid "Don&rsquo;t display tag on front end."
+msgstr "Nerādīt birkas gala lietotājiem"
+
+#: inc/featured-content.php:426
+msgid "Tag Name"
+msgstr "Birkas nosaukums"
+
+#: inc/customizer.php:147
+msgid "For an in-depth tutorial, and more tips and tricks, visit the <a href=\"%s\">Twenty Fourteen documentation</a>."
+msgstr "Padziļinātai palīdzībai, padomiem un trikiem, apmeklējiet <a href=\"%s\">Twenty Fourteen dokumentāciju</a>."
+
+#: inc/customizer.php:146
+msgid "Enhance your site design by using <a href=\"%s\">Featured Images</a> for posts you&rsquo;d like to stand out (also known as post thumbnails). This allows you to associate an image with your post without inserting it. Twenty Fourteen uses featured images for posts and pages&mdash;above the title&mdash;and in the Featured Content area on the home page."
+msgstr "Uzlabojiet mājas lapas dizainu izmantojot <a href=\"%s\">rakstu attēlus</a>. Tas ļaus piesaistīt attēlu rakstam. Twenty Fourteen attēlo rakstu attēlus virs nosaukuma un Izceltā satura sadaļā."
+
+#: inc/customizer.php:145
+msgid "The home page features your choice of up to 6 posts prominently displayed in a grid or slider, controlled by a <a href=\"%1$s\">tag</a>; you can change the tag and layout in <a href=\"%2$s\">Appearance &rarr; Customize</a>. If no posts match the tag, <a href=\"%3$s\">sticky posts</a> will be displayed instead."
+msgstr "Mājas lapā var izvēlēties līdz 6 rakstiem kurus attēlot režģī vai slīdnī, ko kontrolē <a href=\"%1$s\">birka</a>; Tu vari mainīt birku un izkārtojumu  <a href=\"%2$s\">Dizains &rarr; Pārveidot</a>. Ja neviens raksta nesakritīs ar birku, <a href=\"%3$s\">lipīgie ieraksti</a> tiks rādīti to vietā."
+
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.8)  #-#-#-#-#
+#. Theme Name of the plugin/theme
+#: inc/customizer.php:142
+msgid "Twenty Fourteen"
+msgstr "Twenty Fourteen"
+
+#: inc/customizer.php:74
+msgid "Slider"
+msgstr "Slīdošais elements"
+
+#: inc/customizer.php:73
+msgid "Grid"
+msgstr "Režģis"
+
+#: inc/customizer.php:69
+msgid "Layout"
+msgstr "Izkārtojums"
+
+#: inc/customizer.php:55 inc/customizer.php:145 inc/featured-content.php:405
+#: inc/featured-content.php:414 inc/featured-content.php:474
+msgctxt "featured content default tag slug"
+msgid "featured"
+msgstr "ieteiktais"
+
+#: inc/customizer.php:54 inc/featured-content.php:404
+msgid "Use a <a href=\"%1$s\">tag</a> to feature your posts. If no posts match the tag, <a href=\"%2$s\">sticky posts</a> will be displayed instead."
+msgstr "Izmantojiet <a href=\"%1$s\">birku</a>, lai iezīmētu savus rakstus. Ja neviens raksts nesaturēs birku, <a href=\"%2$s\">lipīgie raksti</a> tiks parādīti tā vietā."
+
+#: inc/customizer.php:53 inc/featured-content.php:403
+msgid "Featured Content"
+msgstr "Izceltais saturs"
+
+#: inc/customizer.php:47 inc/customizer.php:48
+msgid "Background may only be visible on wide screens."
+msgstr "Fons var būt redzams tikai uz lieliem monitoriem."
+
+#: inc/customizer.php:44 inc/customizer.php:45
+msgid "May only be visible on wide screens."
+msgstr "Redzams vienīgi platos ekrānos"
+
+#: inc/customizer.php:40
+msgid "Display Site Title &amp; Tagline"
+msgstr "Rādīt mājas lapas nosaukumu un saukli"
+
+#: inc/customizer.php:37
+msgid "Site Title Color"
+msgstr "Lapas nosaukuma krāsa"
+
+#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
+msgid "Twenty Fourteen requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again."
+msgstr ""
+"Twenty Fourteen nepieciešama vismaz WordPress versija 3.6. Jūs izmantojat versiju %s.\n"
+"Lūdzu atjauniniet un mēģiniet vēlreiz."
+
+#: image.php:66
+msgid "Next Image"
+msgstr "Nākamais attēls"
+
+#: image.php:65
+msgid "Previous Image"
+msgstr "Iepriekšējais attēls"
+
+#: header.php:53
+msgid "Skip to content"
+msgstr "Doties uz saturu"
+
+#: header.php:52
+msgid "Primary Menu"
+msgstr "Galvenā izvēlne"
+
+#: header.php:48
+msgid "Search"
+msgstr "Meklēt"
+
+#: functions.php:498
+msgid "Page %s"
+msgstr "Lapa %s"
+
+#: functions.php:379
+msgid "%d Article"
+msgid_plural "%d Articles"
+msgstr[0] "%d raksts"
+msgstr[1] "%d raksti"
+msgstr[2] "%d rakstu"
+
+#: functions.php:262
+msgid "Next"
+msgstr "Nākamais raksts"
+
+#: functions.php:261
+msgid "Previous"
+msgstr "Iepriekšējais"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Lato, translate this to 'off'. Do not translate into your own language.
+#: functions.php:216
+msgctxt "Lato font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:194
+msgid "Appears in the footer section of the site."
+msgstr "Parādās mājas lapas kājenē."
+
+#: functions.php:192
+msgid "Footer Widget Area"
+msgstr "Kājenes logrīku vieta"
+
+#: functions.php:185
+msgid "Additional sidebar that appears on the right."
+msgstr "Papildus sānjosla kas parādās labajā pusē."
+
+#: functions.php:183
+msgid "Content Sidebar"
+msgstr "Satura sānu josla"
+
+#: functions.php:176
+msgid "Main sidebar that appears on the left."
+msgstr "Galvenā sānu josla, kas parādās kreisajā pusē."
+
+#: functions.php:174
+msgid "Primary Sidebar"
+msgstr "Galvenā sānjosla"
+
+#: functions.php:84
+msgid "Secondary menu in left sidebar"
+msgstr "Otrā izvēlne kreisajā sānjoslā"
+
+#: functions.php:83
+msgid "Top primary menu"
+msgstr "Augšējais galvenā izvēlne"
+
+#: footer.php:21
+msgid "Proudly powered by %s"
+msgstr "Lepni darbina %s"
+
+#: content-none.php:27
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Izskatās, ka mēs nevaram atrast to ko meklējat. Iespējams meklēšana var palīdzēt."
+
+#: content-none.php:22
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Diemžēl, bet nekas netika atrasts. Mēģiniet vēlreiz izmantojot citus atslēgvārdus."
+
+#: content-none.php:18
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Esat gatavi publicēt savu pirmo rakstu? <a href=\"%1$s\">Sāciet te</a>."
+
+#: content-none.php:12
+msgid "Nothing Found"
+msgstr "Nekas nav atrasts"
+
+#: content-aside.php:53 content-audio.php:53 content-gallery.php:53
+#: content-image.php:53 content-link.php:53 content-page.php:22
+#: content-quote.php:53 content-video.php:53 content.php:61 image.php:54
+msgid "Pages:"
+msgstr "Lapas:"
+
+#. translators: %s: Name of current post
+#: content-aside.php:48 content-audio.php:48 content-gallery.php:48
+#: content-image.php:48 content-link.php:48 content-quote.php:48
+#: content-video.php:48 content.php:56 inc/template-tags.php:222
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Turpināt lasīšanu  %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-aside.php:40 content-audio.php:40 content-gallery.php:40
+#: content-image.php:40 content-link.php:40 content-page.php:28
+#: content-quote.php:40 content-video.php:40 content.php:42 image.php:34
+#: page-templates/contributors.php:35
+msgid "Edit"
+msgstr "Labot"
+
+#: content-aside.php:37 content-audio.php:37 content-gallery.php:37
+#: content-image.php:37 content-link.php:37 content-quote.php:37
+#: content-video.php:37 content.php:38 inc/widgets.php:215
+msgid "% Comments"
+msgstr "% komentāri"
+
+#: content-aside.php:37 content-audio.php:37 content-gallery.php:37
+#: content-image.php:37 content-link.php:37 content-quote.php:37
+#: content-video.php:37 content.php:38 inc/widgets.php:215
+msgid "1 Comment"
+msgstr "1 komentārs"
+
+#: content-aside.php:37 content-audio.php:37 content-gallery.php:37
+#: content-image.php:37 content-link.php:37 content-quote.php:37
+#: content-video.php:37 content.php:38 inc/widgets.php:215
+msgid "Leave a comment"
+msgstr "Komentēt"
+
+#: content-aside.php:17 content-audio.php:17 content-featured-post.php:28
+#: content-gallery.php:17 content-image.php:17 content-link.php:17
+#: content-quote.php:17 content-video.php:17 content.php:19
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ", "
+
+#: comments.php:59
+msgid "Comments are closed."
+msgstr "Komentāri ir slēgti."
+
+#: comments.php:36 comments.php:54
+msgid "Newer Comments &rarr;"
+msgstr "Jaunāki komentāri &rarr;"
+
+#: comments.php:35 comments.php:53
+msgid "&larr; Older Comments"
+msgstr "&larr; Vecāki komentāri"
+
+#: comments.php:34 comments.php:52
+msgid "Comment navigation"
+msgstr "Komentāru navigācija"
+
+#: comments.php:27
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s komentārs par &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s komentāri par &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s komentāru par &ldquo;%2$s&rdquo;"
+
+#: category.php:20
+msgid "Category Archives: %s"
+msgstr "Kategoriju arhīvs: %s"
+
+#: author.php:31
+msgid "All posts by %s"
+msgstr "Visi %s raksti"
+
+#: archive.php:40 taxonomy-post_format.php:51
+msgid "Archives"
+msgstr "Arhīvi"
+
+#: archive.php:37
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:37
+msgid "Yearly Archives: %s"
+msgstr "Gada arhīvs: %s"
+
+#: archive.php:34
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:34
+msgid "Monthly Archives: %s"
+msgstr "Mēneša arhīvs: %s"
+
+#: archive.php:31
+msgid "Daily Archives: %s"
+msgstr "Dienas arhīvs: %s"
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Izskatās, ka šeit nekas netika atrasts. Varbūt izmantojiet meklēšanu?"
+
+#: 404.php:17
+msgid "Not Found"
+msgstr "Nav atrasts"
+
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.8)  #-#-#-#-#
+#. Author URI of the plugin/theme
+#: footer.php:21
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#. Author of the plugin/theme
+msgid "the WordPress team"
+msgstr "WordPress komanda"
+
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/twentyfourteen/"
+msgstr "https://wordpress.org/themes/twentyfourteen/"

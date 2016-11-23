@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+.idea
+node_modules
+.sass-cache
+/_ide_helper.php

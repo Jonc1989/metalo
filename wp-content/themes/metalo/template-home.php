@@ -38,7 +38,7 @@
 		</div>
 	</div>
 </section>
-<section class="sec-padding">
+<!--<section class="sec-padding">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-lg-6">
@@ -674,9 +674,10 @@
 			<h2 class="color-white">Working Gallery</h2>
 			<p class="color-white">Lorem ipsum is a dummy text it will use for subtitle here</p>
 			<span class="decor"><span class="inner"></span></span>
-		</div>
+		</div>-->
+
 		<!--Carousel-->
-		<div class="gallery-slider gallery-slider-carousel">
+		<!--<div class="gallery-slider gallery-slider-carousel">
 			<article class="slide-item">
 				<figure class="image-box">
 					<a href="<?php bloginfo( 'template_url' ); ?>/img/gallery/gallery-1.jpg" class="lightbox-image" title="Awsome Title Here"><img src="<?php bloginfo( 'template_url' ); ?>/img/gallery/gallery-1.jpg" alt=""></a>
@@ -883,12 +884,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="row clearfix">
+		<div class="row clearfix">-->
+
+
 			<!--Skills Column-->
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 column">
+			<!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 column">
 				<h4 class="sec-title title-bottom color-white mb-30"><span class="color-theme">Factory</span> Progress</h4>
 				<div class="skills">
-					<!--Skill Box-->
+
 					<div class="skill-box">
 						<h4>Chemical Research Program</h4>
 						<div class="inner-box">
@@ -900,7 +903,7 @@
 							</div>
 						</div>
 					</div>
-					<!--Skill Box-->
+
 					<div class="skill-box">
 						<h4>Metal Engineering Program</h4>
 						<div class="inner-box">
@@ -912,7 +915,7 @@
 							</div>
 						</div>
 					</div>
-					<!--Skill Box-->
+
 					<div class="skill-box">
 						<h4>Power & Energy Program</h4>
 						<div class="inner-box">
@@ -924,7 +927,7 @@
 							</div>
 						</div>
 					</div>
-					<!--Skill Box-->
+
 					<div class="skill-box">
 						<h4>Agricultural Program</h4>
 						<div class="inner-box">
@@ -936,7 +939,7 @@
 							</div>
 						</div>
 					</div>
-					<!--Skill Box-->
+
 					<div class="skill-box">
 						<h4>Petroleum & Gas</h4>
 						<div class="inner-box">
@@ -949,13 +952,13 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
+
 			<!--Accordion Column-->
-			<article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 column">
+			<!--<article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 column">
 				<h4 class="sec-title title-bottom color-white mt-md-30 mb-30"><span class="color-theme">Factory</span> FAQ’s</h4>
-				<!--Accordion Box-->
+
 				<ul class="accordion-box">
-					<!--Block-->
 					<li class="block">
 						<div class="acc-btn active">
 							<div class="icon-outer"><span class="icon fa icon-minus flaticon-line"></span> <span class="icon icon-plus flaticon-signs"></span></div> Chemical Research and quality Check</div>
@@ -963,7 +966,7 @@
 							<div class="content">Lorem ipsum dolor sit amet, consec tetuer adipis cing elit, sed diam nonummy nibh euismod lao reet dolore magna aliquam erat volutpat.</div>
 						</div>
 					</li>
-					<!--Block-->
+
 					<li class="block">
 						<div class="acc-btn">
 							<div class="icon-outer"><span class="icon fa icon-minus flaticon-line"></span> <span class="icon icon-plus flaticon-signs"></span></div> Ut wisi enim ad minim veniam amet em</div>
@@ -971,7 +974,7 @@
 							<div class="content">Lorem ipsum dolor sit amet, consec tetuer adipis cing elit, sed diam nonummy nibh euismod lao reet dolore magna aliquam erat volutpat.</div>
 						</div>
 					</li>
-					<!--Block-->
+
 					<li class="block">
 						<div class="acc-btn">
 							<div class="icon-outer"><span class="icon fa icon-minus flaticon-line"></span> <span class="icon icon-plus flaticon-signs"></span></div> Nam liber tempor cum soluta nobis body</div>
@@ -981,11 +984,11 @@
 					</li>
 				</ul>
 			</article>
-			<!--Tabs Column-->
+
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 column sm-d-ib">
 				<h4 class="sec-title title-bottom color-white mb-30 mt-md-30"><span class="color-theme">Factory</span> Policy</h4>
 				<div class="tab-style" data-border="2px solid #053636">
-					<!--Btns Column-->
+
 					<div class="column">
 						<div class="tab-btns clearfix">
 							<a href="#tab-1" class="tab-btn active">01&ensp; Policy</a>
@@ -993,9 +996,9 @@
 							<a href="#tab-3" class="tab-btn">03&ensp; Policy</a>
 						</div>
 					</div>
-					<!--Content Column-->
+
 					<div class="column content-column">
-						<!--Tab-->
+
 						<div class="tab collapsed" id="tab-1">
 							<div class="row clearfix">
 								<div class="col-md-12 text-column">
@@ -1009,7 +1012,7 @@
 								</div>
 							</div>
 						</div>
-						<!--Tab-->
+
 						<div class="tab" id="tab-2">
 							<div class="row clearfix">
 								<div class="col-md-12 text-column">
@@ -1023,7 +1026,7 @@
 								</div>
 							</div>
 						</div>
-						<!--Tab-->
+
 						<div class="tab" id="tab-3">
 							<div class="row clearfix">
 								<div class="col-md-12 text-column">
@@ -1178,5 +1181,5 @@
 			</li>
 		</ul>
 	</div>
-</section>
+</section>-->
 <?php get_footer(); ?>

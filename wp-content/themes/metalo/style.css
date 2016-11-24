@@ -1,0 +1,24 @@
+.clear-pads{
+    padding: 0px !important;
+}
+.logo-txt{
+    font-weight: bold;
+    font-size: 35px;
+    color: black;
+}
+.footer .logo-txt{
+    color: white;
+}
+.image-box .image{
+    height: 347px;
+}
+.service-box .image{
+    height: 322px;
+}
+.gallery-section .slide-item {
+    width: 100%;
+}
+.overlay .excerpt{
+    max-height: 155px;
+    overflow: hidden;
+}

@@ -25,12 +25,12 @@
 
 <div class="preloader"></div>
 
-<section class="top-bar">
+<!--<section class="top-bar">
 	<div class="container">
 		<div class="left-text pull-left">
 			<p><span>Opening Hours :</span> Monday to Saturday - 8am to 5pm</p>
 		</div>
-		<!-- /.left-text -->
+
 		<div class="social-icons pull-right">
 			<ul>
 				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -40,15 +40,16 @@
 				<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
 			</ul>
 		</div>
-		<!-- /.social-icons -->
+
 	</div>
-</section>
-<!-- /.top-bar -->
+</section>-->
+
 <header class="header">
 	<div class="container">
 		<div class="logo pull-left">
 			<a href="">
-				<img src="<?php bloginfo( 'template_url' ); ?>/img/resources/logo.png" alt="Awesome Image" />
+
+				<img style="margin-bottom: 16px;" src="<?php bloginfo( 'template_url' ); ?>/img/resources/arrow.png" alt="Awesome Image" /><span class="logo-txt">METALO SIA</span>
 			</a>
 		</div>
 		<div class="header-right-info pull-right clearfix">
@@ -98,11 +99,11 @@
 				<button><i class="fa fa-bars"></i></button>
 			</div>
 		</div>
-		<div class="search-box pull-right">
+		<!--<div class="search-box pull-right">
 			<form action="#">
 				<input type="text" placeholder="Search...">
 				<button type="submit"><i class="fa fa-search"></i></button>
 			</form>
-		</div>
+		</div>-->
 	</div>
 </nav>

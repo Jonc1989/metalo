@@ -4,8 +4,9 @@
 			<div class="row">
 				<div class="col-md-3 col-sm-6">
 					<div class="footer-widget about-widget">
-						<a href="#">
-							<img src="<?php bloginfo( 'template_url' ); ?>/img/resources/logo.png" alt="Awesome Image" />
+						
+						<a href="">
+							<img style="margin-bottom: 16px;" src="<?php bloginfo( 'template_url' ); ?>/img/resources/arrow.png" alt="Awesome Image" /><span class="logo-txt">METALO SIA</span>
 						</a>
 						<p>Lorem ipsum dolor sit amet, eu me evert laboramus, iudico </p>
 						<ul class="contact">

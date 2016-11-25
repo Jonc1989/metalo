@@ -47,7 +47,11 @@ $query = new WP_Query( $args );
 									<?php $image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() )); ?>
 									<?php if($image){; ?>
 										<a href="<?php echo $image; ?>" class="lightbox-image">
-											<div class="col-md-12 clear-pads image" style="background: url(<?php echo $image; ?>) center center no-repeat;background-size: cover;"></div>
+											<div class="col-md-12 clear-pads image" style="background: url(<?php echo $image; ?>) center center no-repeat;
+												-webkit-background-size: cover;
+												-moz-background-size: cover;
+												-o-background-size: cover;
+												background-size: cover;"></div>
 										</a>
 									<?php } ?>
 								</figure>

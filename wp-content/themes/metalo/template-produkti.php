@@ -40,16 +40,20 @@ $query = new WP_Query( $args );
 								<div class="service-box">
 									<div class="img-thumb">
 										<?php $image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() )); ?>
-										<div class="col-md-12 clear-pads image" style="background: url(<?php echo $image; ?>) center center no-repeat;background-size: cover;"></div>
+										<div class="col-md-12 clear-pads image" style="background: url(<?php echo $image; ?>) center center no-repeat;
+											-webkit-background-size: cover;
+											-moz-background-size: cover;
+											-o-background-size: cover;
+											background-size: cover;"></div>
 									</div>
 									<div class="content">
-										<h4 class="title"><a href="#"><?php the_title() ?></a></h4>
+										<h4 class="title"><a href="<?php the_permalink();?>"><?php the_title() ?></a></h4>
 									</div>
 									<div class="overlay">
 										<div class="excerpt"><?php the_excerpt() ?></div>
 
 										<a class="value" href="#"> Sākot no <span class="service-price">$45</span></a>
-										<a class="btn-link" href="#">lasīt vairāk <i class="fa fa-arrow-circle-right"></i></a>
+										<a class="btn-link" href="<?php the_permalink();?>">lasīt vairāk <i class="fa fa-arrow-circle-right"></i></a>
 									</div>
 								</div>
 							</div>

@@ -22,3 +22,9 @@
     max-height: 155px;
     overflow: hidden;
 }
+.pormo_box_img .product-img{
+    height: 250px;
+}
+.service-img{
+    height: 605px;
+}

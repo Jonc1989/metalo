@@ -33,6 +33,7 @@ function products_register() {
 		'capability_type'    => 'post',
 		'hierarchical'       => true,
 		'menu_position'      => 42,
+		'taxonomies'  => array( 'category' ),
 		'supports'           => array( 'title', 'editor', 'thumbnail')
 	);
 

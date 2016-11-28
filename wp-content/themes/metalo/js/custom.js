@@ -347,58 +347,58 @@ function stickyHeader () {
 }
 
 // contactFormValidation
-function contactFormValidation() {
-
-    if ($('.contact-form').length) {
-        $('.contact-form').each(function() {
-
-            var cfName = $(this).attr('id');
-
-            $('#' + cfName).validate({ // initialize the plugin
-                rules: {
-                    name: {
-                        required: true
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    message: {
-                        required: true
-                    },
-                    date: {
-                        required: true
-                    },
-                    category: {
-                        required: true
-                    },
-                    phone: {
-                        required: true
-                    },
-                    gender: {
-                        required: true
-                    },
-                    dateOfBirth: {
-                        required: true
-                    },
-                    subject: {
-                        required: true
-                    }
-                },
-                submitHandler: function(form) {
-                    // sending value with ajax request
-                    $.post($(form).attr('action'), $(form).serialize(), function(response) {
-                        $(form).parent('div').append(response);
-                        $(form).find('input[type="text"]').val('');
-                        $(form).find('input[type="email"]').val('');
-                        $(form).find('textarea').val('');
-                    });
-                    return false;
-                }
-            });
-        });
-    }
-}
+// function contactFormValidation() {
+//
+//     if ($('.contact-form').length) {
+//         $('.contact-form').each(function() {
+//
+//             var cfName = $(this).attr('id');
+//
+//             $('#' + cfName).validate({ // initialize the plugin
+//                 rules: {
+//                     name: {
+//                         required: true
+//                     },
+//                     email: {
+//                         required: true,
+//                         email: true
+//                     },
+//                     message: {
+//                         required: true
+//                     },
+//                     date: {
+//                         required: true
+//                     },
+//                     category: {
+//                         required: true
+//                     },
+//                     phone: {
+//                         required: true
+//                     },
+//                     gender: {
+//                         required: true
+//                     },
+//                     dateOfBirth: {
+//                         required: true
+//                     },
+//                     subject: {
+//                         required: true
+//                     }
+//                 },
+//                 submitHandler: function(form) {
+//                     // sending value with ajax request
+//                     $.post($(form).attr('action'), $(form).serialize(), function(response) {
+//                         $(form).parent('div').append(response);
+//                         $(form).find('input[type="text"]').val('');
+//                         $(form).find('input[type="email"]').val('');
+//                         $(form).find('textarea').val('');
+//                     });
+//                     return false;
+//                 }
+//             });
+//         });
+//     }
+// }
 
 // selectInput
 function selectInput() {
@@ -481,7 +481,7 @@ jQuery(document).on('ready', function() {
         CounterNumberChanger();
         testiCarosule();
         serviceCarosule();
-        contactFormValidation();
+        //contactFormValidation();
         selectInput();
         datePicker();
         gMap();

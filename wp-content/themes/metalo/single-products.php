@@ -32,7 +32,7 @@ if ( have_posts() ) :?>
 					<div class="service_mainconetent" id="invisalign">
 						<div class="about_promo_box">
 							<h2><?php the_title() ?></h2>
-							<h4>We are The Most Successfull in Garden Care Service and We Recover More Than 1000+ project.</h4>
+							<h4><?php echo get_field( 'price' ); ?></h4>
 							<div class="row">
 								<div class="col-lg-5 col-md-5">
 									<div class="pormo_box_img">
@@ -53,12 +53,15 @@ if ( have_posts() ) :?>
 										<div class="pormo_box_details">
 											<?php the_content(); ?>
 											<div class="box_list">
-												<ul>
-													<li><i class="fa fa-angle-right"></i><a href="">Low cost and best service</a></li>
-													<li><i class="fa fa-angle-right"></i><a href="">Modearn Technology</a></li>
-													<li><i class="fa fa-angle-right"></i><a href="">Proffesional Worker</a></li>
-													<li><i class="fa fa-angle-right"></i><a href="">All Parts Available</a></li>
-												</ul>
+												<?php if ( get_field( 'details_1' ) ) { ?>
+													<ul>
+														<?php foreach ( get_field( 'details_1' ) as $details_1 ) { ?>
+															<?php if ( $details_1['description'] != "" ) { ?>
+																<li><i class="fa fa-angle-right"></i><?php echo $details_1['description']; ?></li>
+															<?php } ?>
+														<?php } ?>
+													</ul>
+												<?php } ?>
 											</div>
 										</div>
 									</div>
@@ -67,37 +70,24 @@ if ( have_posts() ) :?>
 							<div class="row">
 								<div class="col-lg-12 col-md-12">
 									<div class="service_table">
-										<table class="table">
-											<thead class="thead-inverse">
-											<tr>
-												<th>Details</th>
-												<th>Service</th>
-												<th>Price</th>
-											</tr>
-											</thead>
-											<tbody>
-											<tr>
-												<td><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</td>
-												<td>Inspection</td>
-												<td>$150 - $250</td>
-											</tr>
-											<tr>
-												<td><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</td>
-												<td>Inspection</td>
-												<td>$150 - $250</td>
-											</tr>
-											<tr>
-												<td><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</td>
-												<td>Inspection</td>
-												<td>$150 - $250</td>
-											</tr>
-											<tr>
-												<td><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</td>
-												<td>Inspection</td>
-												<td>$150 - $250</td>
-											</tr>
-											</tbody>
-										</table>
+										<?php if ( get_field( 'details_2' ) ) { ?>
+											<table class="table">
+												<thead class="thead-inverse">
+												<tr>
+													<th>Detaļas</th>
+													<th>Apraksts</th>
+												</tr>
+												</thead>
+												<tbody>
+													<?php foreach ( get_field( 'details_2' ) as $details_2 ) { ?>
+														<tr>
+															<td><i class="fa fa-angle-right"></i><?php echo $details_2['name']; ?></td>
+															<td><?php echo $details_2['text']; ?></td>
+														</tr>
+													<?php } ?>
+												</tbody>
+											</table>
+										<?php } ?>
 									</div>
 								</div>
 							</div>

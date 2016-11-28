@@ -4,6 +4,8 @@
  */
 ?>
 <?php get_header(); ?>
+<?php $page = get_page_by_title( 'Kontakti' );
+$content = apply_filters('the_content', $page->post_content); ?>
 
 <section class="inner-header">
 	<div class="container">
@@ -36,23 +38,25 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8">
-				<h2>Contact Form</h2>
-				<form action="inc/sendemail.php" class="contact-form row" id="contact-page-contact-form">
+				<h2>Kontaktu forma</h2>
+				<!--<form action="<?php bloginfo( 'template_url' ); ?>/inc/sendemail.php" class="contact-form row" id="contact-page-contact-form">
 					<div class="col-md-6">
-						<input type="text" name="name" placeholder="Name">
-						<input type="text" name="email" placeholder="Email">
-						<input type="text" name="phone" placeholder="Phone">
+						<input type="text" name="name" placeholder="Vārds">
+						<input type="text" name="email" placeholder="Epasts">
+						<input type="text" name="phone" placeholder="Telefons">
 					</div>
 					<div class="col-md-6">
-						<textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
+						<textarea name="message" placeholder="Jūsu ziņa" cols="30" rows="10"></textarea>
 					</div>
 					<div class="col-md-12">
 						<button type="submit">Send</button>
 					</div>
-				</form>
+				</form>-->
+
+				<?php echo $content; ?>
 			</div>
 			<div class="col-md-4">
-				<h2>Address</h2>
+				<h2>Adrese</h2>
 				<ul class="contact-info">
 					<li>
 						<div class="icon-box">
@@ -93,29 +97,36 @@
 		</div>
 	</div>
 </section>
-<section class="sponsors-section" data-bg-color="#fbca00">
-	<div class="container">
-		<ul class="slider">
-			<li>
-				<a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/img/clients/brand-1.png" alt="" title=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/img/clients/brand-2.png" alt="" title=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/img/clients/brand-3.png" alt="" title=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/img/clients/brand-4.png" alt="" title=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/img/clients/brand-5.png" alt="" title=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/img/clients/brand-1.png" alt="" title=""></a>
-			</li>
-		</ul>
-	</div>
-</section>
-
+<!--<section class="sponsors-section" data-bg-color="#fbca00">-->
+<!--	<div class="container">-->
+<!--		<ul class="slider">-->
+<!--			<li>-->
+<!--				<a href="#"><img src="--><?php //bloginfo( 'template_url' ); ?><!--/img/clients/brand-1.png" alt="" title=""></a>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<a href="#"><img src="--><?php //bloginfo( 'template_url' ); ?><!--/img/clients/brand-2.png" alt="" title=""></a>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<a href="#"><img src="--><?php //bloginfo( 'template_url' ); ?><!--/img/clients/brand-3.png" alt="" title=""></a>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<a href="#"><img src="--><?php //bloginfo( 'template_url' ); ?><!--/img/clients/brand-4.png" alt="" title=""></a>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<a href="#"><img src="--><?php //bloginfo( 'template_url' ); ?><!--/img/clients/brand-5.png" alt="" title=""></a>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<a href="#"><img src="--><?php //bloginfo( 'template_url' ); ?><!--/img/clients/brand-1.png" alt="" title=""></a>-->
+<!--			</li>-->
+<!--		</ul>-->
+<!--	</div>-->
+<!--</section>-->
+<script>
+	jQuery(document).on('ready', function() {
+		var form = $('.contact-content').find('form');
+		$( form ).attr( 'id', 'contact-page-contact-form');
+		$( form ).addClass('contact-form');
+		$( form ).addClass('row');
+	});
+</script>
 <?php get_footer(); ?>

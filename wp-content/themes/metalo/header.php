@@ -47,7 +47,7 @@
 <header class="header">
 	<div class="container">
 		<div class="logo pull-left">
-			<a href="">
+			<a href="<?php echo site_url(); ?>">
 
 				<img style="margin-bottom: 16px;" src="<?php bloginfo( 'template_url' ); ?>/img/resources/arrow.png" alt="Awesome Image" /><span class="logo-txt">METALO SIA</span>
 			</a>
@@ -60,7 +60,7 @@
 					</div>
 				</div>
 				<div class="content">
-					<h3>EMAIL</h3>
+					<h3>EPASTS</h3>
 					<p>companyname@mail.com</p>
 				</div>
 			</div>
@@ -71,7 +71,7 @@
 					</div>
 				</div>
 				<div class="content">
-					<h3>Call Now</h3>
+					<h3>Sazinies</h3>
 					<p><b>(732) 803-010-03</b></p>
 				</div>
 			</div>

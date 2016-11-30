@@ -13,21 +13,7 @@ $args = array(
 );
 $query = new WP_Query( $args );
 ?>
-	<section class="inner-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 sec-title colored text-center">
-					<h2>Produkti</h2>
-					<ul class="breadcumb">
-						<li><a href="<?php echo site_url(); ?>">Sākums</a></li>
-						<li><i class="fa fa-angle-right"></i></li>
-						<li><span>Produkti</span></li>
-					</ul>
-					<span class="decor"><span class="inner"></span></span>
-				</div>
-			</div>
-		</div>
-	</section>
+
 
 	<section class="services-section sec-padding" data-bg-color="#f7f7f7">
 		<div class="container">
@@ -52,7 +38,11 @@ $query = new WP_Query( $args );
 									<div class="overlay">
 										<div class="excerpt"><?php the_excerpt() ?></div>
 
-										<a class="value" href="#"> Sākot no <span class="service-price">$45</span></a>
+										<?php if( get_field( 'price' )){ ?>
+											<a class="value" href="<?php the_permalink();?>">
+												Sākot no <span class="service-price"><?php echo get_field( 'price' ); ?></span>
+											</a>
+										<?php } ?>
 										<a class="btn-link" href="<?php the_permalink();?>">lasīt vairāk <i class="fa fa-arrow-circle-right"></i></a>
 									</div>
 								</div>
@@ -66,6 +56,6 @@ $query = new WP_Query( $args );
 			</div>
 		</div>
 	</section>
-	
+
 
 <?php get_footer(); ?>

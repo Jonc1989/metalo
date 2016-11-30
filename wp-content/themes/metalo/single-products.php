@@ -5,24 +5,6 @@
 if ( have_posts() ) :?>
 <?php while ( have_posts() ) : the_post(); ?>
 		
-<section class="inner-header">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 sec-title colored text-center">
-				<h2><?php the_title() ?></h2>
-				<ul class="breadcumb">
-					<li><a href="<?php echo site_url(); ?>">Sākums</a></li>
-					<li><i class="fa fa-angle-right"></i></li>
-					<li><span><?php the_title() ?></span></li>
-				</ul>
-				<span class="decor"><span class="inner"></span></span>
-			</div>
-		</div>
-	</div>
-</section>
-
-
-
 <section id="single_Service" class="sec-padding">
 	<div class="container">
 		<div class="row">
@@ -67,6 +49,22 @@ if ( have_posts() ) :?>
 									</div>
 								</div>
 							</div>
+
+							<div class="row" style="margin-top: 50px;">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<?php if ( get_field( 'pictures' ) ) { ?>
+										<?php foreach ( get_field( 'pictures' ) as $pictures ) { ?>
+											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 single-producr-image" style="background: url(<?php echo $pictures[ 'pic' ];?>) center center no-repeat;
+												-webkit-background-size: cover;
+												-moz-background-size: cover;
+												-o-background-size: cover;
+												background-size: cover;"> </div>
+										<?php } ?>
+									<?php } ?>
+								</div>
+							</div>
+
+
 							<div class="row">
 								<div class="col-lg-12 col-md-12">
 									<div class="service_table">

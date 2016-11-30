@@ -17,12 +17,14 @@
 	<!-- responsive stylesheet -->
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/bootstrap-margin-padding.css">
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/responsive.css">
-
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/js/tosrus/src/css/jquery.tosrus.all.css" />
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/style.css"/>
 	<?php wp_head(); ?>
 </head>
 <body>
-
+<script type="text/javascript">
+	var ajaxurl  = '<?php echo get_site_url(); ?>/wp-admin/admin-ajax.php';
+</script>
 <div class="preloader"></div>
 
 <!--<section class="top-bar">
@@ -47,10 +49,7 @@
 <header class="header">
 	<div class="container">
 		<div class="logo pull-left">
-			<a href="<?php echo site_url(); ?>">
-
-				<img style="margin-bottom: 16px;" src="<?php bloginfo( 'template_url' ); ?>/img/resources/arrow.png" alt="Awesome Image" /><span class="logo-txt">METALO SIA</span>
-			</a>
+				<a href="<?php echo site_url(); ?>"><img style="margin-top: -11px;" src="<?php bloginfo( 'template_url' ); ?>/img/resources/logo.png"/></a>
 		</div>
 		<div class="header-right-info pull-right clearfix">
 			<div class="single-header-info">

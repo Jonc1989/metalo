@@ -5,7 +5,9 @@
     src: local("Anton"), url("http://fonts.gstatic.com/s/anton/v7/TS7BJzhU7AKgPn9R0AejYKCWcynf_cDxXwCLxiixG1c.woff2");
     unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-
+button{
+    outline: 0;
+}
 .clear-pads{
     padding: 0px !important;
 }
@@ -33,14 +35,25 @@
 .footer .logo-txt{
     color: white;
 }
-.image-box .image{
-    height: 347px;
+#gallery-images .image{
+    height: 347px;    overflow: hidden;
+}
+.single-producr-image{
+    height: 185px;
 }
 .service-box .image{
     height: 322px;
+
 }
 .gallery-section .slide-item {
     width: 100%;
+}
+.gallery-section .item-caption{
+    bottom: -60px;
+    opacity: 1;
+}
+#gallery-images .image:hover .item-caption{
+    bottom: 0px;
 }
 .overlay .excerpt{
     max-height: 155px;
@@ -68,4 +81,123 @@
     color: #fff;
     padding-left: 0px;
     padding-right: 0px;
+}
+.disabled{
+    pointer-events: none !important;
+    cursor: default !important;
+}
+.category-wrap{
+    margin-bottom: 50px;
+    height: 50px;
+}
+.category{
+    background: #053636;
+    padding-top: 17px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 100%;
+    text-align: center;
+}
+.category.active{
+    background: #fbca00;
+    border-color: #fbca00;
+}
+.category, .category a{
+    color: #fff;
+}
+#current, #current-p{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 10%;
+    border-color: #6b6b6b;
+    border: 1px solid;
+    text-align: center;
+}
+#sale-pages{
+    margin-top: 20px;
+}
+#sale-pages i{
+    font-size: 25px;
+    color: #ffffff;
+}
+#sale-pages button{
+    margin-right: 5px;
+}
+#sale-pages span{
+    margin-right: 5px;
+}
+.center {
+    text-align: center;
+}
+#sale-pages {
+    margin-top: 20px;
+}
+.paginate-control {
+    display: inline-block;
+    background: #4ec200;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    padding: 0px;
+}
+.paginate-control:disabled{
+    background: #aab2bd;
+}
+.current-page-text{
+    display: inline-block;
+    vertical-align: top;
+}
+.fa-angle-double-left{
+    margin-left: -3px;
+}
+.fa-angle-double-right{
+    margin-right: -3px;
+}
+.wpcf7-form{
+
+}
+.wpcf7-form input, .wpcf7-form textarea {
+    width: 100%;
+    background: #2C353C;
+    color: #C9C9C9;
+    font-size: 13px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+}
+.wpcf7-form input{
+    height: 50px;
+}
+.footer.bg-style .footer-widget.contact-widget input {
+    height: 45px;
+}
+.footer.bg-style .footer-widget.contact-widget input, .footer.bg-style .footer-widget.contact-widget textarea {
+    background: rgba(0, 0, 0, 0.65);
+    border: 1px solid #222222;
+    color: #fff;
+}
+.footer-widget .wpcf7-form input[type="submit"]:hover {
+    background: #fff!important;
+    color: #fbca00;
+}
+.footer-widget .wpcf7-form input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    background: #fbca00!important;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    padding: 0;
+    line-height: 50px;
+    font-weight: bold;
+    transition: all .3s ease;
 }

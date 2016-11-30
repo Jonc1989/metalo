@@ -7,21 +7,6 @@
 <?php $page = get_page_by_title( 'Kontakti' );
 $content = apply_filters('the_content', $page->post_content); ?>
 
-<section class="inner-header">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 sec-title colored text-center">
-				<h2>Kontakti</h2>
-				<ul class="breadcumb">
-					<li><a href="<?php echo site_url(); ?>">Sākums</a></li>
-					<li><i class="fa fa-angle-right"></i></li>
-					<li><span>Kontakti</span></li>
-				</ul>
-				<span class="decor"><span class="inner"></span></span>
-			</div>
-		</div>
-	</div>
-</section>
 <section class="contact-content sec-padding">
 	<div class="container">
 		<div class="sec-title text-center">

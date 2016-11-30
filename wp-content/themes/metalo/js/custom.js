@@ -502,3 +502,102 @@ jQuery(window).on('scroll', function() {
         stickyHeader();
     })(jQuery);
 });
+
+function getQueryParams(qs) {
+    qs = qs.split('+').join(' ');
+
+    var params = {},
+        tokens,
+        re = /[?&]?([^=]+)=([^&]*)/g;
+
+    while (tokens = re.exec(qs)) {
+        params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+    }
+
+    return params;
+}
+
+var params = getQueryParams( window.location.search );
+
+/*----------------------Pagination ---------------------------*/
+jQuery(function($) {
+
+    
+    $('#sale-pages >#first,#sale-pages > #previous,#sale-pages > #next,#sale-pages > #last').click(function() {
+        var operation = $(this).attr('id');
+        var current = identify_operation(operation, currpage, maxpages);
+        currpage = current;
+        $('#current').val(currpage);
+        var data = {
+            'action': 'load_sales',
+            'currpage': currpage,
+            'category': params
+        };
+        $.ajax({
+            url: ajaxurl,
+            data: data,
+            type: 'POST',
+            success: function(data) {
+                if (data) {
+                    $('#sale').empty().append(data);
+                    reorganize_pagination(currpage, maxpages);
+                } else {}
+            }
+        });
+    });
+});
+jQuery(function($) {
+    $('#current').change(function() {
+        var val = $(this).val();
+        if (parseInt(val) > maxpages) {
+            currpage = 1;
+        } else {
+            currpage = val;
+        }
+        var data = {
+            'action': 'load_sales',
+            'currpage': currpage
+        };
+        $.ajax({
+            url: ajaxurl,
+            data: data,
+            type: 'POST',
+            success: function(data) {
+                if (data) {
+                    $('#sale').empty().append(data);
+                    reorganize_pagination(currpage, maxpages);
+                } else {}
+            }
+        });
+    });
+});
+var identify_operation = function(operation, current, max) {
+    if (operation === 'first') {
+        current = 1;
+    } else if (operation === 'last') {
+        current = max;
+    } else if (operation === 'previous') {
+        current--;
+    } else if (operation === 'next') {
+        current++;
+    }
+    return current;
+};
+var reorganize_pagination = function(cur, max) {
+    if (cur == 1) {
+        jQuery('#first').attr('disabled', 'true').removeClass('active').addClass('nonactive');
+        jQuery('#previous').attr('disabled', 'true').removeClass('active').addClass('nonactive');
+        jQuery('#last').removeAttr('disabled').removeClass('nonactive').addClass('active');
+        jQuery('#next').removeAttr('disabled').removeClass('nonactive').addClass('active');
+    } else if (cur == max) {
+        jQuery('#last').attr('disabled', 'true').removeClass('active').addClass('nonactive');
+        jQuery('#next').attr('disabled', 'true').removeClass('active').addClass('nonactive');
+        jQuery('#first').removeAttr('disabled').removeClass('nonactive').addClass('active');
+        jQuery('#previous').removeAttr('disabled').removeClass('nonactive').addClass('active');
+    } else {
+        jQuery('#first').removeAttr('disabled').removeClass('nonactive').addClass('active');
+        jQuery('#previous').removeAttr('disabled').removeClass('nonactive').addClass('active');
+        jQuery('#last').removeAttr('disabled').removeClass('nonactive').addClass('active');
+        jQuery('#next').removeAttr('disabled').removeClass('nonactive').addClass('active');
+    }
+};

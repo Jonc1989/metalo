@@ -5,20 +5,13 @@
 ?>
 <?php get_header();
 
-$args = array(
-	'posts_per_page'    => -1,
-	'order'             => 'DESC',
-	'post_type'         => 'services',
-	'post_status'       => 'publish',
-);
-$query = new WP_Query( $args );
+$query = getServices();
 ?>
-
 
 	<section class="services-section sec-padding" data-bg-color="#f7f7f7">
 		<div class="container">
 			<div class="row">
-				<div class="services-content style2">
+				<div class="services-content style2" id="services">
 
 					<?php if ( $query->have_posts() ) : ?>
 						<?php while ($query->have_posts()) : $query->the_post(); ?>
@@ -52,6 +45,22 @@ $query = new WP_Query( $args );
 						<?php endwhile; ?>
 					<?php endif;?>
 
+				</div>
+				<?php wp_reset_postdata(); ?>
+
+				<script type="text/javascript">
+					var action = 'load_services';
+					var currpage = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
+					var maxpages = '<?php echo $query->max_num_pages; ?>';
+					var container = 'services';
+				</script>
+
+				<div id="ajax-pages" class="more-wrap col-lg-12 col-md-12 col-sm-12 col-xs-12 clear-pads center" >
+					<button id="first"    class="paginate-control nonactive" disabled="true"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+					<button id="previous" class="paginate-control nonactive" disabled="true"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+					<div class="current-page-text"> <span class="hidden-xs current-page">Lapa</span><input autocomplete="off" id="current"  class="" value="<?php echo $query->query_vars['paged'];?>"/><span class="current-page"> no <?php echo ' '.$query->max_num_pages; ?></span></div>
+					<button id="next"     class="paginate-control <?php if($query->max_num_pages > 1){echo ' active';}?>" <?php if($query->max_num_pages == 1){echo 'disabled="true"';}?>><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+					<button id="last"     class="paginate-control <?php if($query->max_num_pages > 1){echo ' active';}?>" <?php if($query->max_num_pages == 1){echo 'disabled="true"';}?>><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
 				</div>
 			</div>
 		</div>

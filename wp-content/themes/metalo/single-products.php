@@ -4,8 +4,8 @@
 
 if ( have_posts() ) :?>
 <?php while ( have_posts() ) : the_post(); ?>
-		
-<section id="single_Service" class="sec-padding">
+
+		<section id="single_Service" class="sec-padding" xmlns="http://www.w3.org/1999/html">
 	<div class="container">
 		<div class="row">
 
@@ -16,18 +16,28 @@ if ( have_posts() ) :?>
 							<h2><?php the_title() ?></h2>
 							<h4><?php echo get_field( 'price' ); ?></h4>
 							<div class="row">
-								<div class="col-lg-5 col-md-5">
-									<div class="pormo_box_img">
+								<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+									<div class="pormo_box_img" id="pictures-wrap">
 										<?php $image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() )); ?>
-
-										<div class="product-img col-md-12 clear-pads" style="background: url(<?php echo $image; ?>)no-repeat center center;
-											-webkit-background-size: cover;
-											-moz-background-size: cover;
-											-o-background-size: cover;
-											background-size: cover;">
-
-										</div>
-
+											<a href="<?php echo $image; ?>" >
+												<div class="product-img col-md-12 col-sm-12 col-xs-12 clear-pads" style="margin-bottom: 30px; background: url(<?php echo $image; ?>)no-repeat center center;
+													-webkit-background-size: cover;
+													-moz-background-size: cover;
+													-o-background-size: cover;
+													background-size: cover;">
+												</div>
+											</a>
+										<?php if ( get_field( 'pictures' ) ) { ?>
+											<?php foreach ( get_field( 'pictures' ) as $pictures ) { ?>
+												<a href="<?php echo $pictures[ 'pic' ];?>">
+													<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 single-producr-image" style="background: url(<?php echo $pictures[ 'pic' ];?>) center center no-repeat;
+														-webkit-background-size: contain;
+														-moz-background-size: contain;
+														-o-background-size: contain;
+														background-size: contain;"> </div>
+												</a>
+											<?php } ?>
+										<?php } ?>
 									</div>
 								</div>
 								<div class="col-lg-7 col-md-7">
@@ -47,20 +57,6 @@ if ( have_posts() ) :?>
 											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-
-							<div class="row" style="margin-top: 50px;">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<?php if ( get_field( 'pictures' ) ) { ?>
-										<?php foreach ( get_field( 'pictures' ) as $pictures ) { ?>
-											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 single-producr-image" style="background: url(<?php echo $pictures[ 'pic' ];?>) center center no-repeat;
-												-webkit-background-size: cover;
-												-moz-background-size: cover;
-												-o-background-size: cover;
-												background-size: cover;"> </div>
-										<?php } ?>
-									<?php } ?>
 								</div>
 							</div>
 
@@ -103,4 +99,14 @@ if ( have_posts() ) :?>
 	<?php get_404_template(); ?>
 
 <?php endif; ?>
+
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery("#pictures-wrap a").tosrus({
+			wrapper    : {
+				onClick    : "close"
+			}
+		});
+	});
+</script>
 <?php get_footer(); ?>

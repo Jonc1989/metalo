@@ -7,15 +7,30 @@ if ( have_posts() ) :?>
 <section class="sec-padding doctor-profile">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-5">
+			<div class="col-md-5" id="pictures-wrap">
 				<?php $image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() )); ?>
-				<div class="service-img col-md-12 clear-pads"style="background: url(<?php echo $image; ?>)no-repeat center center;
+				<a href="<?php echo $image; ?>">
+					<div class="service-img col-md-12 clear-pads"style="margin-bottom: 30px; background: url(<?php echo $image; ?>)no-repeat center center;
 					-webkit-background-size: cover;
 					-moz-background-size: cover;
 					-o-background-size: cover;
 					background-size: cover;">
-			</div>
 				</div>
+				</a>
+				<?php if ( get_field( 'pictures' ) ) { ?>
+					<?php foreach ( get_field( 'pictures' ) as $pictures ) { ?>
+						<a href="<?php echo $pictures[ 'pic' ];?>">
+							<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 single-producr-image" style="background: url(<?php echo $pictures[ 'pic' ];?>) center center no-repeat;
+								-webkit-background-size: contain;
+								-moz-background-size: contain;
+								-o-background-size: contain;
+								background-size: contain;"> </div>
+						</a>
+					<?php } ?>
+				<?php } ?>
+
+			</div>
+
 			<div class="col-md-7 single-team-member">
 				<h3><?php the_title() ?></h3>
 				<span><?php echo get_field( 'price' ); ?></span>
@@ -71,20 +86,8 @@ if ( have_posts() ) :?>
 					</li>
 				</ul>
 			</div>
+			
 
-			<div class="row" style="margin-top: 50px;">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<?php if ( get_field( 'pictures' ) ) { ?>
-						<?php foreach ( get_field( 'pictures' ) as $pictures ) { ?>
-							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 single-producr-image" style="background: url(<?php echo $pictures[ 'pic' ];?>) center center no-repeat;
-								-webkit-background-size: cover;
-								-moz-background-size: cover;
-								-o-background-size: cover;
-								background-size: cover;"> </div>
-						<?php } ?>
-					<?php } ?>
-				</div>
-			</div>
 		</div>
 	</div>
 </section>
@@ -96,4 +99,13 @@ if ( have_posts() ) :?>
 	<?php get_404_template(); ?>
 
 <?php endif; ?>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery("#pictures-wrap a").tosrus({
+				wrapper    : {
+					onClick    : "close"
+				}
+			});
+		});
+	</script>
 <?php get_footer(); ?>

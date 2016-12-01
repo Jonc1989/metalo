@@ -517,21 +517,29 @@ function getQueryParams(qs) {
     return params;
 }
 
-var params = getQueryParams( window.location.search );
+var params = getQueryParams( window.location.search ); console.log( params);
 
 /*----------------------Pagination ---------------------------*/
 jQuery(function($) {
 
     
-    $('#sale-pages >#first,#sale-pages > #previous,#sale-pages > #next,#sale-pages > #last').click(function() {
+    $('#ajax-pages >#first,#ajax-pages > #previous,#ajax-pages > #next,#ajax-pages > #last').click(function() {
         var operation = $(this).attr('id');
         var current = identify_operation(operation, currpage, maxpages);
         currpage = current;
         $('#current').val(currpage);
+
+        var category = '';
+        if( jQuery.isEmptyObject(params) ){
+            
+        }else{
+            category = params.category;
+        }
+        
         var data = {
-            'action': 'load_sales',
+            'action': action,
             'currpage': currpage,
-            'category': params
+            'category': category
         };
         $.ajax({
             url: ajaxurl,
@@ -539,7 +547,7 @@ jQuery(function($) {
             type: 'POST',
             success: function(data) {
                 if (data) {
-                    $('#sale').empty().append(data);
+                    $( '#' + container ).empty().append(data);
                     reorganize_pagination(currpage, maxpages);
                 } else {}
             }
@@ -556,7 +564,8 @@ jQuery(function($) {
         }
         var data = {
             'action': 'load_sales',
-            'currpage': currpage
+            'currpage': currpage,
+            'category': params
         };
         $.ajax({
             url: ajaxurl,
@@ -564,7 +573,7 @@ jQuery(function($) {
             type: 'POST',
             success: function(data) {
                 if (data) {
-                    $('#sale').empty().append(data);
+                    $( '#' + container ).empty().append(data);
                     reorganize_pagination(currpage, maxpages);
                 } else {}
             }

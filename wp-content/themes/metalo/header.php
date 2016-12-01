@@ -91,7 +91,9 @@
 					<li><a href="<?php echo site_url(); ?>/pakalpojumi">Pakalpojumi</a></li>
 					<li><a href="<?php echo site_url(); ?>/galerija">Galerija</a></li>
 					<li><a href="<?php echo site_url(); ?>/kontakti">Kontakti</a></li>
-					<li><a href="<?php echo site_url(); ?>/izpardosana">Izpārdošana</a></li>
+					<li>
+						<a href="<?php echo site_url(); ?>/izpardosana">Izpārdošana</a>
+					</li>
 				</ul>
 			</div>
 			<div class="nav-footer">

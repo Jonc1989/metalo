@@ -39,7 +39,7 @@ button{
     height: 347px;    overflow: hidden;
 }
 .single-producr-image{
-    height: 185px;
+    height: 110px;
 }
 .service-box .image{
     height: 322px;
@@ -60,7 +60,7 @@ button{
     overflow: hidden;
 }
 .pormo_box_img .product-img{
-    height: 250px;
+    height: 310px;
 }
 .service-img{
     height: 605px;
@@ -117,23 +117,23 @@ button{
     border: 1px solid;
     text-align: center;
 }
-#sale-pages{
+#ajax-pages{
     margin-top: 20px;
 }
-#sale-pages i{
+#ajax-pages i{
     font-size: 25px;
     color: #ffffff;
 }
-#sale-pages button{
+#ajax-pages button{
     margin-right: 5px;
 }
-#sale-pages span{
+#ajax-pages span{
     margin-right: 5px;
 }
 .center {
     text-align: center;
 }
-#sale-pages {
+#ajax-pages {
     margin-top: 20px;
 }
 .paginate-control {
